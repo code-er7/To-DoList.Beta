@@ -1,16 +1,18 @@
 <%- include("header") -%>
 <body>
     
+    <div class="flex-parent jc-center">
 
-    <div class="ListChager">
-        <form action="/" method="post">
-            <button type="submit" name="list" value="gotowork">work</button>
-        </form>
-    </div>
-    <div class="ListChager">
-        <form action="/" method="post">
-            <button type="submit" name="list" value="gotohome" >Home</button>
-        </form>
+        <div class="topform left" >
+            <form action="/" method="post">
+                <button class="buttonchanger checker" type="submit" name="list" value="gotohome"  >Today</button>
+            </form>
+        </div>
+        <div class="topform right" >
+            <form action="/" method="post">
+                <button class="buttonchanger " type="submit" name="list" value="gotowork" >Work</button>
+            </form>
+        </div>
     </div>
 
 
@@ -29,9 +31,9 @@
               </div>
             <% } %>
 
-            <form class="item" method="POST" action="/">
+            <form class="item formchange" method="POST" action="/">
                 <input type="text" name="newItem" id="" placeholder="New Item">
-                <button type="submit" name="list" value=<%= ListTittle %> >+</button>
+                <button class="buttonchange" type="submit" name="list" value=<%= ListTittle %> >+</button>
             </form>
    
     </div>

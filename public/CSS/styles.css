@@ -51,12 +51,12 @@ p {
   color: #00204a;
 }
 
-form {
+.formchange{
   text-align: center;
   margin-left: 20px;
 }
 
-button {
+.buttonchange {
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -94,3 +94,43 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+.topform{
+  text-align: center;
+  max-width: 200px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  
+}
+.buttonchanger {
+ 
+  color: #ffffff;
+  background-color: #7147ba;
+  font-size: 22px;
+  border: 1px solid #7147ba;
+  padding: 10px 76px;
+  cursor: pointer
+ 
+}
+.buttonchanger:hover {
+  color: #2d63c8;
+  
+  background-color: #ffffff;
+}
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+.left
+{
+  margin-left: 500px;
+}
+.right{
+  margin-right: 500px;
+}
+
+
