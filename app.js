@@ -57,14 +57,15 @@ app.get("/about" , function(req , res){
 app.post("/" ,  function(req , res ){
     newItemInTheList = req.body.newItem;
 
-    //here we are just checking from which list post req is coming--- all the requset come to / home page but we have dynammicaly given the button it's value so by value we are deciding in which array we have to add new item and which page to render 
+    //here we are just checking from which list post req is coming--- all the requset come to "/" home page but we have dynammicaly given the button it's value so by value we are deciding in which array we have to add new item and which page to render 
     if(req.body.list === "gotowork")
     {
-        res.redirect("/work");
+        res.redirect("/work"); 
     }
    else if(req.body.list === "gotohome")
     {
         res.redirect("/");
+    
     }
    else if(req.body.list === "Work")
     {
