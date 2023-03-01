@@ -1,0 +1,7 @@
+
+1. all the ejs files are created in one folder usually it's the views folder 
+
+2. and also for all the static files which we want to load goes in public folder and in our app.js we have to tell express that this folder is for static content like our css or js
+
+
+3.If we want to add some peice of code which is repetive in all the pages of out website like (header and footer )of a website so what we can do is make a different ejs file for them and include it in the pages we want 
